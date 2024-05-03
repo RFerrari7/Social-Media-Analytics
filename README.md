@@ -13,7 +13,7 @@ analysis.
 * **topic_terms.json**: dataframe obtained from topic_modeling.ipnyb and
 necessary to compute the WordClouds
 
-The *source code* folder contains the following files:
+The *source code* folder contains the following notebooks:
 * **data_extraction.ipynb**: it contains all the necessary code to interact with the Reddit API using the Python library PRAW, enabling the retrieval of the dataset for analysis. The outcome of this notebook is the raw dataset, which will then undergo further processing.
 * **preprocessing.ipynb**: notebook that encompasses all text preprocessing steps, resulting in the preprocessed dataset in CSV format. Specifically, it includes code for language detection and filtering, lemmatization, and normalization.
 * **exploratory_data_analysis.ipynb**: notebook that contains a dataset description and dataset exploration operations with plots.
@@ -21,5 +21,5 @@ The *source code* folder contains the following files:
 * **topic_modeling.ipynb**: it includes a section for text representation to prepare the data for LDA, a section where LDA is performed and one in which we show the graphical results
 * **WordCloud_for_topic_modeling.ipnyb**: it contains just the WordClouds corresponding to the 7 topics obtained before
 
-All packages and libraries are loaded at the beginning of the code files. In case they are not already installed, they can be installed using the standard procedure.
+All packages and libraries are loaded at the beginning of the notebooks. In case they are not already installed, they can be installed using the standard procedure.
 
