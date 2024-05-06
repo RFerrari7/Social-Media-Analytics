@@ -1,25 +1,46 @@
-## Social Media Analytics project on r/marvelstudios subreddit: Community and Content Analysis after the release of 'Avengers: Endgame'
+# Social Media Analytics project on r/marvelstudios subreddit: Community and Content Analysis after the release of 'Avengers: Endgame'
 
+This repository contains a project developed during the course of the Master's degree in Data Science.
 
-This repository contains the following pdf files:
-- **Report.pdf** : the LaTex-written report describing the work done, i.e., the project, the implemented solutions, and the evaluations.
-- **Presentation.pdf**: the presentation of the project results, conducted using Colab
+## Description
 
-The *data* folder contains the following files:
-* **avengers.csv**: just the raw dataset extracted from Reddit
-* **avengers_pre.csv**: dataset resulting from preprocessing.ipynb
-* **avengers_sentiment.csv**: dataset containing the results from the sentiment
-analysis.
-* **topic_terms.json**: dataframe obtained from topic_modeling.ipnyb and
-necessary to compute the WordClouds
+This project aims to analyze the interactions within the r/marvelstudios subreddit, from the popular social media platform *Reddit*, focusing on the discussion of 'Avengers: Endgame', one of the most popular films in the Marvel Cinematic Universe (MCU). With the objective of identifying relationships, influential users, sentiments, and communities, the research employs three main tools:
 
-The *source code* folder contains the following notebooks:
-* **data_extraction.ipynb**: it contains all the necessary code to interact with the Reddit API using the Python library PRAW, enabling the retrieval of the dataset for analysis. The outcome of this notebook is the raw dataset, which will then undergo further processing.
-* **preprocessing.ipynb**: notebook that encompasses all text preprocessing steps, resulting in the preprocessed dataset in CSV format. Specifically, it includes code for language detection and filtering, lemmatization, and normalization.
-* **exploratory_data_analysis.ipynb**: notebook that contains a dataset description and dataset exploration operations with plots.
-* **sentiment_analysis.ipnyb**: notebook in which sentiment analysis was performed on the dataset after the pre-processing phase.
-* **topic_modeling.ipynb**: it includes a section for text representation to prepare the data for LDA, a section where LDA is performed and one in which we show the graphical results
-* **WordCloud_for_topic_modeling.ipnyb**: it contains just the WordClouds corresponding to the 7 topics obtained before
+* **Social Network Analysis**: it is the process of investigating social structures through the use of network and graph theory, that can capture the dynamic interactions between   commenters and post authors.
+* **Sentiment Analysis**: it involves understanding the sentiment of the users about a certain topic through the analysis of the comments' polarity, which can be *positive*, *neutral* and *negative*.
+* **Topic Modeling**: topic modeling is an unsupervised Machine Learning technique that automatically identifies and extracts significant topics from a set of documents. By leveraging this technique, it's possibile to determine the optimal way to categorize various comments based on their main topic.
+
+The project’s structure comprehends data collection and exploration, social network analysis, sentiment analysis, and topic modeling. The approach is centered on understanding dynamics within an online community engaged in passionate discussions on a popular topic like 'Avengers: Endgame'.
+
+## Repository structure
+
+This repository is structured as follows:
+
+```
+.
+├── Presentation.pdf                             # slides presenting the results obtained
+├── README.md
+├── Report.pdf                                   # detailed project report
+├── data                                        # data used for the analysis
+│   ├── avengers.csv                             # just the raw dataset extracted from Reddit
+│   ├── avengers_pre.csv                         # dataset resulting from preprocessing.ipynb
+│   ├── avengers_sentiment.csv                   # dataset containing the results from the sentiment analysis
+│   └── topic_terms.json                         # obtained from topic_modeling.ipnyb and necessary to compute the WordClouds
+└── source code                                 # folder containing the notebooks
+    ├── 1.data_extraction.ipynb                  # data extraction from reddit using praw
+    ├── 2.preprocessing.ipynb                    # preprocessing phase
+    ├── 3.exploratory_data_analysis.ipynb        # exploratory operations with plots
+    ├── 4.sentiment_analysis.ipynb               # sentiment analysis on the comments using VADER, with preprocessed dataset
+    ├── 5.topic_modeling.ipynb                   # LDA + results 
+    └── 6.WordCloud_for_topic_modeling.ipynb     # WordClouds corresponding to the topics obtained through topic modeling
+```
 
 All packages and libraries are loaded at the beginning of the notebooks. In case they are not already installed, they can be installed using the standard procedure.
+
+
+
+
+
+
+
 
