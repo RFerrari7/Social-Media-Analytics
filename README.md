@@ -1,6 +1,7 @@
 # Social Media Analytics project on r/marvelstudios subreddit: Community and Content Analysis after the release of 'Avengers: Endgame'
 
-This repository contains a project developed during the course of the Master's degree in Data Science.
+This repository contains a project developed as part of *Social Media Analytics* course of the [Master's degree in Data Science](https://www.unimib.it/graduate/data-science),
+University of Milano Bicocca.
 
 ## Description
 
